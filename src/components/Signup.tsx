@@ -83,8 +83,8 @@ export const Signup = () => {
                 >
                     {({ errors, handleChange, touched }) => (
                         <Form className={classes.form}>
-                            <Grid container spacing={2}>
-                                <Grid item xs={12} sm={6}>
+                            <Grid container spacing={3}>
+                                <Grid item xs={12} sm={12}>
                                     <TextField
                                         {...errors.firstName ? <div className="err">{errors.firstName}</div> : ""}
                                         autoComplete="fname"
@@ -102,7 +102,7 @@ export const Signup = () => {
                                         }
                                     />
                                 </Grid>
-                                <Grid item xs={12} sm={6}>
+                                <Grid item xs={12} sm={12}>
                                     <TextField
                                         {...errors.lastName ? <div className="err">{errors.lastName}</div> : ""}
                                         variant="outlined"
