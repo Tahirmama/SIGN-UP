@@ -53,8 +53,14 @@ const useStyles = makeStyles(theme => ({
         padding: "10px",
     },
     submit: {
-        margin: theme.spacing(3, 0, 2)
+        margin: theme.spacing(3, 0, 2),
+        '&:hover': {
+            background: "black",
+            color:"white",
+            fontSize:"17px"
     },
+   
+    }
 }));
 
 export const Signup = () => {
